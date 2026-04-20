@@ -31,6 +31,14 @@ public class Produk {
         this.stok = stok;
     }
 
+    public void kurangiStok(int jumlah){
+        if (jumlah > stok){
+            System.out.println("Tidak boleh melebihi stok");
+        }
+        else{
+            stok = stok - jumlah;
+        }
+    }
 
 
     public void tampilkanInfo() {
